@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { teamMembers } from '../constants';
 // import Stars from './Stars';
 
 const Contacts = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="min-h-screen text-white py-16 bg-gray-900 relative">
+    <div className="min-h-screen text-white pt-[7rem] pb-16 bg-gradient-to-b from-gray-900 to-gray-800 relative">
       {/* <div className="absolute inset-0">
         <Stars />
       </div> */}

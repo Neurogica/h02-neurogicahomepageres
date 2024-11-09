@@ -2,9 +2,9 @@ import React from 'react';
 
 const Commerce = () => {
   return (
-    <div className="min-h-screen text-white py-16 bg-gray-900">
+    <div className="min-h-screen text-white pt-[7rem] pb-16 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">特定商取引法に基づく表記</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">特定商取引法に基づく表記</h2>
         
         <div className="max-w-3xl mx-auto">
           <div className="space-y-8">

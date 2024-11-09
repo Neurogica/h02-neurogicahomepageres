@@ -3,7 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
-import { neurogica_logo } from '../assets';
+import { neurogica_logo_white } from '../assets';
 import { navigation } from '../constants';
 import Button from './Button';
 import MenuSvg from '../assets/svg/MenuSvg';
@@ -38,7 +38,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <Link className="block w-[12rem] xl:mr-8" to="/">
-          <img src={neurogica_logo} width={80} height={40} alt="Brainwave" />
+          <img src={neurogica_logo_white} width={180} height={70} alt="Brainwave" />
         </Link>
 
         <nav

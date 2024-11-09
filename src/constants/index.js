@@ -150,11 +150,10 @@ export const roadmap = [
 ];
 
 export const newsItems = [
+  "代表取締役が野村證券共催VENTURE PITCHに登壇 (2024/11/7)",
+  "代表取締役がデロイトトーマツVS Meetup Sessionに登壇 (2024/10/24)",
+  "代表取締役が明治大学MECピッチにて最優秀賞＆賞金獲得 (2024/8/4)",
   "代表取締役がHiNODE PiTCHに登壇 (2024/7/20)",
-  "[To appear]",
-  "[To appear]",
-  "[To appear]",
-  "[To appear]",
 ];
 
 export const collabText =

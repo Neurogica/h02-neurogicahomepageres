@@ -6,38 +6,33 @@ import { LeftCurve, RightCurve } from "./design/Collaboration";
 
 const Vision = () => {
   return (
-    <Section crosses id="vision">
-      <div className="container lg:flex">
-        <div className="max-w-[55rem]">
-          <h2 className="h4 mb-4 md:mb-8">
+    <Section crosses id="vision" className="bg-gradient-to-b from-gray-900 to-gray-800 pb-10">
+      <div className="container lg:flex text-white">
+        <div className="max-w-[60rem]">
+          <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold mb-6 md:mb-10">
             ビジョン：<br/>「脳科学が当たり前になる社会を創る。」
           </h2>
 
-          <ul className="max-w-[22rem] mb-10 md:mb-14">
-            <li className="mb-3 py-3">
+          <ul className="max-w-[30rem] mb-12 md:mb-16 mt-12">
+            <li className="mb-4 py-4">
               <div className="flex items-center">
-                <img src={check} width={24} height={24} alt="check" />
-                <h6 className="body-2 ml-5">
+                <img src={check} width={32} height={32} alt="check" />
+                <h6 className="text-xl md:text-2xl ml-6">
                   現在非科学的な実社会の中で、脳科学を活用した新しい価値提供を行います。
                 </h6>
               </div>
-              <div className="flex items-center">
-                <img src={check} width={24} height={24} alt="check" />
-                <h6 className="body-2 ml-5 mt-4">
-                Neuroビッグデータを用いたAI解析による価値提供を続け、新しい社会の構築を目指します。
+              <div className="flex items-center mt-6">
+                <img src={check} width={32} height={32} alt="check" />
+                <h6 className="text-xl md:text-2xl ml-6">
+                  Neuroビッグデータを用いたAI解析による価値提供を続け、新しい社会の構築を目指します。
                 </h6>
               </div>
-              {/* <p className="body-2 mt-3 text-n-4">
-                Neuroビッグデータを用いたAI解析による価値提供を続け、新しい社会の構築を目指します。
-              </p> */}
             </li>
           </ul>
-
-          {/* <Button>Try it now</Button> */}
         </div>
 
-        <div className="lg:ml-auto xl:w-[38rem] mt-4">
-          <p className="body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
+        <div className="lg:ml-auto xl:w-[38rem] mt-6">
+          <p className="text-lg md:text-xl mb-10 text-gray-300 md:mb-16 lg:mb-32 lg:w-[26rem] lg:mx-auto">
             {collabText}
           </p>
 

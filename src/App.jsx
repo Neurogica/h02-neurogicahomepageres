@@ -22,19 +22,41 @@ const App = () => {
               <MainPanel />
               <Vision />
               <Services />
-              <People />
-              <Contacts />
               <Footer />
               <ButtonGradient />
             </>
           }
         />
-        <Route path="/commerce" element={
-          <>
-            <Commerce />
-            <Footer />
-          </>
-        } />
+        <Route
+          path="/people"
+          element={
+            <>
+              <Header />
+              <People />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/contacts"
+          element={
+            <>
+              <Header />
+              <Contacts />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/commerce"
+          element={
+            <>
+              <Header />
+              <Commerce />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </>
   );

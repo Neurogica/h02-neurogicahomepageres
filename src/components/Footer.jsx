@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
-        <div className="mb-4">
+        <div>
           <a href="/commerce" className="text-n-4 hover:text-n-1 transition-colors">
             特定商取引法に基づく表記
           </a>
         </div>
 
-        <p className="caption text-n-4 lg:block">
+        <p className="caption text-n-4">
           © {new Date().getFullYear()}. All rights reserved.
         </p>
 
