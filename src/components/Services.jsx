@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Heading from "./Heading";
 import Section from "./Section";
 import { roadmap } from "../constants";
@@ -42,8 +43,8 @@ const Services = () => (
       </div>
 
       <div className="flex justify-center space-x-4 mt-12 md:mt-15 xl:mt-20">
-        <Button className="w-48" href="/people">メンバー</Button>
-        <Button className="w-48" href="/contacts">お問い合わせ</Button>
+        <Button className="w-48" as={Link} to="/people">メンバー</Button>
+        <Button className="w-48" as={Link} to="/contacts">お問い合わせ</Button>
       </div>
     </div>
   </Section>
