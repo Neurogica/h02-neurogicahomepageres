@@ -1,3 +1,5 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Vision from "./components/Vision";
 import Services from "./components/Services";
@@ -6,28 +8,34 @@ import Header from "./components/Header";
 import MainPanel from "./components/MainPanel";
 import People from "./components/People";
 import Contacts from "./components/Contacts";
-import { Routes, Route } from 'react-router-dom';
+import Commerce from "./components/Commerce";
 
 const App = () => {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <Header />
-        <Routes>
-          <Route path="/" element={
+      <Routes>
+        <Route
+          path="/"
+          element={
             <>
+              <Header />
               <MainPanel />
               <Vision />
               <Services />
+              <People />
+              <Contacts />
               <Footer />
+              <ButtonGradient />
             </>
-          } />
-          <Route path="/people" element={<People />} />
-          <Route path="/contacts" element={<Contacts />} />
-        </Routes>
-      </div>
-
-      <ButtonGradient />
+          }
+        />
+        <Route path="/commerce" element={
+          <>
+            <Commerce />
+            <Footer />
+          </>
+        } />
+      </Routes>
     </>
   );
 };
