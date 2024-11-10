@@ -7,7 +7,16 @@ const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
-        <div>
+        <div className="flex flex-col space-y-2">
+          <Link to="/privacy" className="text-n-4 hover:text-n-1 transition-colors">
+            プライバシーポリシー
+          </Link>
+          <Link to="/terms" className="text-n-4 hover:text-n-1 transition-colors">
+            利用規約
+          </Link>
+          <Link to="/support" className="text-n-4 hover:text-n-1 transition-colors">
+            カスタマーサポート
+          </Link>
           <Link to="/commerce" className="text-n-4 hover:text-n-1 transition-colors">
             特定商取引法に基づく表記
           </Link>

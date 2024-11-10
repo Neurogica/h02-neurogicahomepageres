@@ -9,6 +9,9 @@ import MainPanel from "./components/MainPanel";
 import People from "./components/People";
 import Contacts from "./components/Contacts";
 import Commerce from "./components/Commerce";
+import Privacy from "./components/Privacy";
+import Terms from "./components/Terms";
+import Support from "./components/Support";
 
 const App = () => {
   return (
@@ -53,6 +56,36 @@ const App = () => {
             <>
               <Header />
               <Commerce />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/privacy"
+          element={
+            <>
+              <Header />
+              <Privacy />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/terms"
+          element={
+            <>
+              <Header />
+              <Terms />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/support"
+          element={
+            <>
+              <Header />
+              <Support />
               <Footer />
             </>
           }

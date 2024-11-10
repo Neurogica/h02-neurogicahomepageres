@@ -31,8 +31,8 @@ const MainPanel = () => {
           <div className="absolute inset-0 bg-black opacity-60 z-1"></div>
         </div>
       </div>
-      <div className="container relative z-10 mt-[5rem]" ref={parallaxRef}>
-        <div className="relative max-w-[62rem] mx-auto text-center mb-[1.875rem] md:mb-20 lg:mb-[6.25rem]">
+      <div className="container relative z-1" ref={parallaxRef}>
+        <div className="relative max-w-[62rem] mx-auto text-center mb-[3.5rem] sm:mb-[4rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 flex justify-center items-center flex-wrap">
             <img className="mb-3 xs:w-[20%]" src={neurogica_logo_transparent} width={100} height={80} alt="Neurogica Transparent" />
             <img className="mt-[-1rem] xs:w-[60%]" src={neurogica_logo_white} width={350} height={100} alt="Neurogica White" />
@@ -42,9 +42,20 @@ const MainPanel = () => {
           </p>
         </div>
       </div>
-      <div className="relative max-w-[25rem] md:right-[8rem] mx-auto md:max-w-7xl xl:mb-20 z-3">
+      <div className="relative w-full mx-auto xl:mb-20 z-10">
         <ScrollParallax isAbsolutelyPositioned>
-          <div className="absolute sm:left-1/2 md:left-1/2 left-1/2 transform -translate-x-1/2 bottom-[-5rem] md:bottom-[-8rem] lg:bottom-[-14rem] px-6 py-6 rounded-2xl flex flex-col space-y-4 w-[95%] xs:w-[95%] sm:w-[130%] md:w-[70%] lg:w-[130%] xl:w-[150%]">
+          <div className="absolute left-1/2 transform -translate-x-1/2 
+            bottom-[-10rem] 
+            sm:bottom-[-8rem] 
+            md:bottom-[-10rem] 
+            lg:bottom-[-16rem] 
+            xl:bottom-[-18rem]
+            w-[85%] 
+            md:w-[80%] 
+            lg:w-[75%] 
+            min-w-[320px]
+            max-w-[1400px]
+            mx-auto px-6 py-6">
             <div className="relative p-1 rounded-[1.5rem] bg-gradient-to-r from-blue-500/30 to-purple-500/30 backdrop-blur-lg w-full">
               <div className="relative p-6 bg-gray-900/90 rounded-[1.4375rem] overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 animate-gradient"></div>
